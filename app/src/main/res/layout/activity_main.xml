@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="111dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:tintMode="src_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_bluetooth_disabled_24" />
+
+    <Button
+        android:id="@+id/connect_id"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/button_1"
+        android:textColor="@color/btoOn"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:strokeColor="@color/btoOn"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/scan_id"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/button_3"
+        android:textColor="@color/btoOn"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/connectDevice_id"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connect_id"
+        app:strokeColor="@color/btoOn"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/connectDevice_id"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/button_4"
+        android:textColor="@color/btoOn"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/connect_id"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBle"
+        app:strokeColor="@color/btoOn"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/buttonBle"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/button_5"
+        android:textColor="@color/btoOn"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/connect_id"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:strokeColor="@color/btoOn"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/bluetoothStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/permissionsState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/bluetoothStatus" />
+
+    <TextView
+        android:id="@+id/title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_1"
+        android:textColor="@color/btoOn"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTintMode="src_in"
+        android:foregroundTintMode="add"
+        android:indeterminateTint="@color/btoOn"
+        android:indeterminateTintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scan_id" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_1"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

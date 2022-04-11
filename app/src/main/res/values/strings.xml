@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bluetooth App</string>
+
+    <string name="button_1">Conecta</string>
+
+    <string name="button_2">Apaga</string>
+
+    <string name="button_3">Escanear Dispositivos</string>
+
+    <string name="button_4">Dispositivos conectados</string>
+    <string name="button_5" >Scan BLE Devices</string>
+
+    <string name="title_1">Associated Devices</string>
+    <string name="title_2">Discovered Devices</string>
+
+
+    <string name="alias_device">Alias</string>
+    <string name="alias_name">Name</string>
+    <string name="alias_adress">Adress</string>
+    <string name="alias_uiid">uuids</string>
+
+</resources>
