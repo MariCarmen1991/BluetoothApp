@@ -14,3 +14,8 @@ Pequeña muestra de código para trabajar con bluetooth en Kotlin
 
 5. Find Bluetooth Low Energy devices <br></br>
 <img  width="180px"  src="https://github.com/MariCarmen1991/BluetoothApp/blob/master/app/src/main/res/drawable-v24/bluetoothapp4.jpeg" />
+
+## Autor
+Mari Carmen © < mcDev >
+
+<div align="left"><img width="100px" src="https://github.com/MariCarmen1991/Assets/blob/master/app/src/main/res/drawable/mcImage1.png"/ style="transform:rotate(180deg);" >  </div>
