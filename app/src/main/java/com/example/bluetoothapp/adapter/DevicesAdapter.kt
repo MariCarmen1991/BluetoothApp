@@ -19,7 +19,6 @@ class DevicesAdapter(private var listDevices: ArrayList<Device> ) : RecyclerView
     interface OnClickListener : View.OnClickListener {
         fun onItemClick(position: Int)
         override fun onClick(p0: View?) {
-            TODO("Not yet implemented")
         }
     }
 
